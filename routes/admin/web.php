@@ -28,5 +28,19 @@ Route::group(['prefix'=>'/admin','namespace'=>'admin'],function(){
    //change admin password
    Route::post('changepwd',['uses'=>'AdminController@changepwd']);
    //delete admin
-    Route::post('adminDel',['uses'=>'AdminController@adminDel']);
+   Route::post('adminDel',['uses'=>'AdminController@adminDel']);
+
+    //tab management
+    Route::any('tab',['uses'=>'TabController@tabList']);
+    //tab add
+    Route::any('tabAdd',['uses'=>'TabController@tabAdd']);
+    //tab edit
+    Route::get('tabEdit/{id?}',['uses'=>'TabController@tabEdit']);
+    //tab DELETE
+    Route::post('tabDel',['uses'=>'TabController@tabDel']);
+
+
+    //memerb management
+    Route::get('memberList',['uses'=>'memberController@list']);
+
 });

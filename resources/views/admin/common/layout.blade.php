@@ -59,6 +59,60 @@
             <li>
                 <a href="javascript:;">
                     <i class="iconfont">&#xe6b8;</i>
+                    <cite>Tab Management</cite>
+                    <i class="iconfont nav_right">&#xe697;</i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a _href="{{url('admin/tab')}}">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>Tab list</cite>
+
+                        </a>
+                    </li >
+                    <li>
+                        <a _href="{{url('admin/tabAdd')}}">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>Add Tabs</cite>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="iconfont">&#xe70b;</i>
+                            <cite>会员管理</cite>
+                            <i class="iconfont nav_right">&#xe697;</i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a _href="xxx.html">
+                                    <i class="iconfont">&#xe6a7;</i>
+                                    <cite>会员列表</cite>
+
+                                </a>
+                            </li >
+                            <li>
+                                <a _href="xx.html">
+                                    <i class="iconfont">&#xe6a7;</i>
+                                    <cite>会员删除</cite>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a _href="xx.html">
+                                    <i class="iconfont">&#xe6a7;</i>
+                                    <cite>等级管理</cite>
+
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <i class="iconfont">&#xe6b8;</i>
                     <cite>会员管理</cite>
                     <i class="iconfont nav_right">&#xe697;</i>
                 </a>
