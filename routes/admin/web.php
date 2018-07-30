@@ -41,6 +41,35 @@ Route::group(['prefix'=>'/admin','namespace'=>'admin'],function(){
 
 
     //memerb management
-    Route::get('memberList',['uses'=>'memberController@list']);
+    //memberlist
+    Route::get('memberList',['uses'=>'memberController@memberList']);
+    //member add
+    Route::any('memberAdd',['uses'=>'memberController@memberAdd']);
+    //editmemberdetails
+    Route::any('memberEdit/{id?}',['uses'=>'memberController@memberEdit']);
+    //change password
+    Route::any('memberCpwd/{id?}',['uses'=>'memberController@changePassword']);
+
+    //delete Member, DELETE 测试
+    Route::delete('memberDel/{id?}',['uses'=>'memberController@memberDel']);
+
+
+    //phpSpreadsheet test
+    Route::any('excelBasic1',['uses'=>'excelController@basic1']);
+    Route::any('excelBasic2',['uses'=>'excelController@basic2']);
+    Route::any('excelBasic3',['uses'=>'excelController@basic3']);
+
+
+    //********************crawler*************************//
+    Route::get('crawl/{url?}',['uses'=>'crawlController@index']);
+
+
+    //********************UPload mmmmmulity file test*************************//
+    Route::get('upload',['uses'=>'uploadController@index']);
+    Route::post('upload',['uses'=>'uploadController@upload']);
+
+
+
+
 
 });
