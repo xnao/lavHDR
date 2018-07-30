@@ -169,3 +169,53 @@ function tabNew(){
     });
 
 }
+
+function memberAdd(){
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+    // get users input
+    if (undefined != $("#id").val())
+        var id          = $("#id").val();
+    else
+        var id = null;
+
+    // var name        = $("#name").val();
+    // var email       = $("#email").val();
+    // var gender      = $("#gender").val();
+    // var mobile      = $("#mobile").val();
+    // var address     = $("#address").val();
+    // var post_code   = $("#post_code").val();
+
+
+    var data ={
+        "name":$("#name").val(),
+        "email":$("#email").val(),
+        "gender":$("#gender").val(),
+        "mobile":$("#mobile").val(),
+        "address":$("#address").val(),
+        "post_code":$("#post_code").val(),
+    };
+
+
+    $.ajax({
+        url: "memberAdd",
+        type:"post",
+        dataType: "json",
+        // data:{id:id,name:name,email:email,gender:gender,mobile:mobile,address:address,post_code:post_code},
+        data:{data:data},
+        success:function(data){
+            parent.layer.msg(data.msg, {icon: 1, time: 1000});
+        }
+
+
+
+
+    });
+
+}
+
+
+

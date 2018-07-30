@@ -59,56 +59,33 @@
             <li>
                 <a href="javascript:;">
                     <i class="iconfont">&#xe6b8;</i>
-                    <cite>Tab Management</cite>
+                    <cite>PhpSpreadSheet</cite>
                     <i class="iconfont nav_right">&#xe697;</i>
                 </a>
                 <ul class="sub-menu">
                     <li>
-                        <a _href="{{url('admin/tab')}}">
+                        <a _href="{{url('admin/excelBasic1')}}">
                             <i class="iconfont">&#xe6a7;</i>
-                            <cite>Tab list</cite>
+                            <cite>Basic1 generate excel</cite>
+                        </a>
+                    </li >
 
+                    <li>
+                        <a _href="{{url('admin/excelBasic2')}}">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>Basic2 download ods</cite>
                         </a>
                     </li >
                     <li>
-                        <a _href="{{url('admin/tabAdd')}}">
+                        <a _href="{{url('admin/excelBasic3')}}">
                             <i class="iconfont">&#xe6a7;</i>
-                            <cite>Add Tabs</cite>
-
+                            <cite>Basic3 PDF</cite>
                         </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <i class="iconfont">&#xe70b;</i>
-                            <cite>会员管理</cite>
-                            <i class="iconfont nav_right">&#xe697;</i>
-                        </a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a _href="xxx.html">
-                                    <i class="iconfont">&#xe6a7;</i>
-                                    <cite>会员列表</cite>
+                    </li >
 
-                                </a>
-                            </li >
-                            <li>
-                                <a _href="xx.html">
-                                    <i class="iconfont">&#xe6a7;</i>
-                                    <cite>会员删除</cite>
-
-                                </a>
-                            </li>
-                            <li>
-                                <a _href="xx.html">
-                                    <i class="iconfont">&#xe6a7;</i>
-                                    <cite>等级管理</cite>
-
-                                </a>
-                            </li>
-
-                        </ul>
-                    </li>
                 </ul>
+
+
             </li>
             <li>
                 <a href="javascript:;">
@@ -118,63 +95,34 @@
                 </a>
                 <ul class="sub-menu">
                     <li>
-                        <a _href="member-list.html">
+                        <a _href="{{url('admin/memberList')}}">
                             <i class="iconfont">&#xe6a7;</i>
                             <cite>会员列表</cite>
 
                         </a>
                     </li >
                     <li>
-                        <a _href="member-del.html">
+                        <a _href="{{url('admin/upload')}}">
                             <i class="iconfont">&#xe6a7;</i>
-                            <cite>会员删除</cite>
+                            <cite>上传测试</cite>
 
                         </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <i class="iconfont">&#xe70b;</i>
-                            <cite>会员管理</cite>
-                            <i class="iconfont nav_right">&#xe697;</i>
-                        </a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a _href="xxx.html">
-                                    <i class="iconfont">&#xe6a7;</i>
-                                    <cite>会员列表</cite>
-
-                                </a>
-                            </li >
-                            <li>
-                                <a _href="xx.html">
-                                    <i class="iconfont">&#xe6a7;</i>
-                                    <cite>会员删除</cite>
-
-                                </a>
-                            </li>
-                            <li>
-                                <a _href="xx.html">
-                                    <i class="iconfont">&#xe6a7;</i>
-                                    <cite>等级管理</cite>
-
-                                </a>
-                            </li>
-
-                        </ul>
                     </li>
                 </ul>
+
+
             </li>
             <li>
                 <a href="javascript:;">
                     <i class="iconfont">&#xe723;</i>
-                    <cite>订单管理</cite>
+                    <cite>网站抓取</cite>
                     <i class="iconfont nav_right">&#xe697;</i>
                 </a>
                 <ul class="sub-menu">
                     <li>
-                        <a _href="order-list.html">
+                        <a _href="{{url('admin/crawl/gibcom')}}">
                             <i class="iconfont">&#xe6a7;</i>
-                            <cite>订单列表</cite>
+                            <cite>中华商标网</cite>
                         </a>
                     </li >
                 </ul>

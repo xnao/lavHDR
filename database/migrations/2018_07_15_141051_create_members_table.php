@@ -22,6 +22,7 @@ class CreateMembersTable extends Migration
             $table->string('email','50');
             $table->string('address',50);
             $table->string('post_code','10');
+            $table->string('status',3)->default(0);
         });
     }
 
