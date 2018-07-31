@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+//include admin/web.php
+include ('admin/web.php');

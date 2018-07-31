@@ -21,3 +21,14 @@ $factory->define(App\User::class, function (Faker $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+//generate fake data fro admins table
+$factory->define(App\Model\Admin::class, function (Faker $faker) {
+    static $password;
+    return [
+        'username' => $faker->name,
+//        'password' => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', // secret
+        'password' => $password?:$password=bcrypt('admin888'),
+        //use bcrypt('admin888') to encrypt the password
+    ];
+});
